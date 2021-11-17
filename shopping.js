@@ -35,8 +35,11 @@ let todaysDate=Date()
 addToShoppingList(4, "milk", 6, "protein", todaysDate)
 addToShoppingList(5, "grapes", 8, "carb", todaysDate)
 addToShoppingList(6, "chicken breast", 10, "protein", todaysDate)
-addToShoppingList(7, "popcorn", 4, "carb", todaysDate)
+addToShoppingList(7, "popcorn", 14, "carb", todaysDate)
 addToShoppingList(8, "yogurt", 5, "fat", todaysDate)
 
-
-console.log(foods)
+for (const food of foods){
+    if (food.price > 8){
+        console.log(food.name)
+    }
+}
