@@ -19,4 +19,24 @@ const foods = [
     }
 ]
 
+function addToShoppingList(id, name, price, macro, date){
+    foods.push({
+        id: id,
+        name: name,
+        price: price,
+        primaryMacro: macro,
+        dateCreated: date
+    },
+  )
+}
+
+let todaysDate=Date()
+
+addToShoppingList(4, "milk", 6, "protein", todaysDate)
+addToShoppingList(5, "grapes", 8, "carb", todaysDate)
+addToShoppingList(6, "chicken breast", 10, "protein", todaysDate)
+addToShoppingList(7, "popcorn", 4, "carb", todaysDate)
+addToShoppingList(8, "yogurt", 5, "fat", todaysDate)
+
+
 console.log(foods)
